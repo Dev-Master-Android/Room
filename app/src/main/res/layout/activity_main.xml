@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/white"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/_8dp">
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/last_name"
+            android:textSize="@dimen/_18sp"
+            android:padding="@dimen/_8dp"
+            android:inputType="text"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etInitials"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:textSize="@dimen/_18sp"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_8dp"
+            android:layout_margin="@dimen/_8dp"
+            android:background="@drawable/edit_text_background" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone"
+            android:textSize="@dimen/_18sp"
+            android:layout_margin="@dimen/_8dp"
+            android:inputType="phone"
+            android:padding="@dimen/_8dp"
+            android:background="@drawable/edit_text_background" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:layout_marginTop="@dimen/_16dp"
+            android:textSize="@dimen/_18sp"
+            android:padding="@dimen/_8dp"
+            android:layout_margin="@dimen/_8dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_8dp"
+            android:paddingTop="@dimen/_16dp"/>
+    </LinearLayout>
+</LinearLayout>
